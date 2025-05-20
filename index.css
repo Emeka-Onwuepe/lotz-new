@@ -73,9 +73,8 @@
             position: relative;
             z-index: 2;
             text-align: center;
-            max-width: calc(700px + 5%);
             color: var(--white);
-            padding: 5%;
+            padding: 0px 5%;
         }
         .hero-title {
             font-size: 2rem;
@@ -104,23 +103,18 @@
             background: var(--dark-green);
             color: var(--white);
         }
-        @media (min-width: 700px) {
-            /* .hero-title {
-                font-size: 2rem;
+        @media screen and (min-width: 700px) {
+            .hero-content {
+            padding: 0px 4%;
             }
-            .hero-desc {
-                font-size: 1rem;
-            }
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-            } */
 
             nav {
           
                  padding: 2rem 5vw;
             
              }
+
+
 
             .hero-title {
                 font-size: 3rem;
@@ -129,4 +123,20 @@
                 font-size: 1.4rem;
              }
             
+        }
+
+        @media screen and (min-width: 800px){
+         .hero-content {
+            max-width: 700px;
+            padding: 0px;
+            }
+
+        }
+
+        @media screen and (min-width: 1000px){
+         .hero-content {
+            max-width: 70vw;
+            padding: 0px;
+            }
+
         }
