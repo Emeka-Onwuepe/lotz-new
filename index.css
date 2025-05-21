@@ -182,6 +182,26 @@
 	width: 100%;
 	justify-content: center;
 	background-color: var(--gray);
+    /* flex-direction: column; */
+}
+.clients{
+    display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: var(--light-gray);
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.client_images img{
+    height: 25px;
+    width: auto;
+}
+#client_images img{
+    height: 40px;
 }
 .about {
 	/* display: flex; */
@@ -189,7 +209,7 @@
 	/* flex-wrap: wrap; */
 	background-color: var(--gray);
 	color: var(--black);
-	padding: 30px;
+	padding: 20px;
 	/* justify-content: ; */
 	text-align: justify;
 	/* max-width: 800px; */
@@ -279,7 +299,42 @@
             text-align: center;
         }
 
-                
+
+        .get_free_quote_form{
+            padding-top: 30px;
+            background-color: var(--gray);
+            display: flex;
+            flex-direction: column;
+        }
+        .get_free_quote_form h3{
+            color: var(--black);
+            text-align: center;
+        }
+        .quote-form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,textarea{
+            width: 80vw;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        textarea{
+            height: 130px;
+        }
+
+        .quote-form button{
+            width: fit-content;
+            padding: 10px;
+            margin: 5px auto 30px auto;
+            border-radius: 20px;
+            background-color: var(--dark-green);
+            color: #fff;
+            border-color: var(--dark-green);
+            box-shadow: white;
+        }      
         footer {
         height: 80px;
         background-color: var(--dark-green);
@@ -330,7 +385,19 @@
             .hero-desc {
                 font-size: 1.4rem;
              }
-            
+
+             
+            .client_images img{
+                height: 45px;
+            }
+            #client_images img{
+                height: 60px;
+            }
+
+             input,textarea{
+            width: 70vw;
+        
+        }
         }
 
         @media screen and (min-width:750px) {
@@ -345,6 +412,11 @@
             max-width: 700px;
             padding: 0px;
             }
+
+            input,textarea{
+            width: 60vw;
+        
+        }
 
         }
 
