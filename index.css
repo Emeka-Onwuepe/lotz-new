@@ -92,7 +92,7 @@
             font-weight: 400;
             text-align: justify;
         }
-        /* .hero-btn {
+        .hero-btn {
             padding: 1rem 2.5rem;
             font-size: 1.2rem;
             background: var(--white);
@@ -106,7 +106,7 @@
         .hero-btn:hover {
             background: var(--dark-green);
             color: var(--white);
-        } */
+        }
 
   
 .our-services {
