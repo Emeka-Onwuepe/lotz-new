@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueTech Solar Solutions</title>
+    <style>
+        :root {
+            --primary-blue: #1976d2;
+            --secondary-blue: #1565c0;
+            --light-blue: #e3f2fd;
+            --text-dark: #222;
+            --text-light: #fff;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--light-blue);
+            color: var(--text-dark);
+        }
+        header {
+            background: var(--primary-blue);
+            color: var(--text-light);
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #90caf9;
+        }
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(90deg, var(--primary-blue) 60%, var(--secondary-blue) 100%);
+            color: var(--text-light);
+        }
+        .hero-content {
+            max-width: 500px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .hero img {
+            width: 300px;
+            max-width: 90vw;
+            margin-left: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        section {
+            padding: 3rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+            padding: 2rem;
+            flex: 1 1 250px;
+            min-width: 250px;
+            max-width: 320px;
+            text-align: center;
+        }
+        .service-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+        .contact-form {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+            padding: 2rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1rem;
+            border: 1px solid #b3c6e0;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            background: var(--primary-blue);
+            color: var(--text-light);
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: var(--secondary-blue);
+        }
+        footer {
+            background: var(--secondary-blue);
+            color: var(--text-light);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 800px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero img {
+                margin: 2rem 0 0 0;
+            }
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BlueTech Solar Solutions</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Empowering Your Future with IT & Solar Energy</h1>
+            <p>
+                We provide innovative IT solutions and sustainable solar energy systems for businesses and homes. Harness the power of technology and the sun with BlueTech Solar Solutions.
+            </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Solar panels and technology">
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            BlueTech Solar Solutions is dedicated to delivering cutting-edge IT services and reliable solar energy solutions. Our team of experts combines years of experience in technology and renewable energy to help you achieve efficiency, sustainability, and growth.
+        </p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>IT Consulting</h3>
+                <p>
+                    Tailored IT strategies, cloud solutions, and cybersecurity to optimize your business operations.
+                </p>
+            </div>
+            <div class="service-card">
+                <h3>Solar Panel Installation</h3>
+                <p>
+                    Design and installation of high-efficiency solar energy systems for homes and businesses.
+                </p>
+            </div>
+            <div class="service-card">
+                <h3>Maintenance & Support</h3>
+                <p>
+                    Ongoing technical support and maintenance for both IT infrastructure and solar installations.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        &copy; 2024 BlueTech Solar Solutions. All rights reserved.
+    </footer>
+</body>
+</html></section>
