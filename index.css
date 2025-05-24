@@ -202,9 +202,9 @@ height: 50px;
 	/* display: flex; */
 	/* justify-content: space-evenly; */
 	/* flex-wrap: wrap; */
-	background-color: var(--gray);
+	background-color: var(--white);
 	color: var(--black);
-	padding: 20px;
+	padding: 30px 20px;
 	/* justify-content: ; */
 	text-align: justify;
 	/* max-width: 800px; */
