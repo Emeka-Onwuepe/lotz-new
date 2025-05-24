@@ -191,6 +191,13 @@
 #client_images img{
     height: 40px;
 }
+#client_image img{
+height: 50px;
+}
+#anan img{
+    height: 70px;
+}
+
 .about {
 	/* display: flex; */
 	/* justify-content: space-evenly; */
@@ -238,11 +245,11 @@
 
 .contact_us{
     padding-top: 20px;
-    background-color: var(--dark-blue);
+    background-color: var(--light-blue);
 
 }
 
-        .contact_head {
+.contact_head {
             width: fit-content;
             margin: 0px auto;
             padding: 5px;
@@ -408,7 +415,7 @@
         .nav-hero-container {
             padding-top: 100px;
         }
-        
+
         .nav-links {
             gap: 2rem;
         }
@@ -442,6 +449,12 @@
             }
             #client_images img{
                 height: 60px;
+            }
+            #client_image img{
+                height: 70px;
+            }
+            #anan img{
+                height: 90px;
             }
 
              input,textarea{
