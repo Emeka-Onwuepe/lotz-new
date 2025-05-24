@@ -19,14 +19,28 @@
         </nav>
         <section class="hero">
             <div class="hero-content">
-                <h1 class="hero-title">Information Technology and Renewable Energy</h1>
-                <p class="hero-desc">
-                    We provide cutting-edge IT solutions to help your business thrive in the digital age. From software development to cybersecurity, we've got you covered.
-                    We harness the power of the sun to reduce your energy bills and your carbon footprint. Discover our innovative solar solutions for homes and businesses.
-                    Our project management services ensure that your projects are delivered on time and within budget. Let us help you achieve your goals with our expert guidance.
-                </p>
+            <h1 class="hero-title animate-fade-in">Information Technology and Renewable Energy</h1>
+            <p class="hero-desc animate-slide-up">
+            We provide cutting-edge IT solutions to help your business thrive in the digital age. From software development to cybersecurity, we've got you covered.
+            We harness the power of the sun to reduce your energy bills and your carbon footprint. Discover our innovative solar solutions for homes and businesses.
+            Our project management services ensure that your projects are delivered on time and within budget. Let us help you achieve your goals with our expert guidance.
+            </p>
             </div>
         </section>
+        <script>
+        // Animation for .service-card when in view
+        document.addEventListener("DOMContentLoaded", function() {
+            const cards = document.querySelectorAll('.service-card');
+            const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                }
+            });
+            }, { threshold: 0.2 });
+            cards.forEach(card => observer.observe(card));
+        });
+        </script>
     </div>
     <main>
 <section class="card-container">
